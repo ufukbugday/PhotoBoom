@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhotoBoom.DataAccess", "PhotoBoom.DataAccess\PhotoBoom.DataAccess.csproj", "{8201F398-0498-493E-8609-2388F07F188C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhotoBoom.Endpoint", "PhotoBoom.Endpoint\PhotoBoom.Endpoint.csproj", "{0669C6AF-0E28-43C5-ABDE-18692F2DD665}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhotoBoom.Core", "PhotoBoom.Core\PhotoBoom.Core.csproj", "{DA96342F-CF52-4EC8-803F-AD80331A1844}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhotoBoom.Business", "PhotoBoom.Business\PhotoBoom.Business.csproj", "{622DFAEF-BED2-4B40-B16C-292065081BD3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhotoBoom.Entity", "PhotoBoom.Entity\PhotoBoom.Entity.csproj", "{0408CCDB-9D5D-4CC5-A7A5-4FD18D39C18F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoBoom.XUnitTests", "PhotoBoom.XUnitTests\PhotoBoom.XUnitTests.csproj", "{AA7BFAB3-51CA-462C-BFE7-71F727558CA2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8201F398-0498-493E-8609-2388F07F188C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8201F398-0498-493E-8609-2388F07F188C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8201F398-0498-493E-8609-2388F07F188C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8201F398-0498-493E-8609-2388F07F188C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0669C6AF-0E28-43C5-ABDE-18692F2DD665}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0669C6AF-0E28-43C5-ABDE-18692F2DD665}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0669C6AF-0E28-43C5-ABDE-18692F2DD665}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0669C6AF-0E28-43C5-ABDE-18692F2DD665}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA96342F-CF52-4EC8-803F-AD80331A1844}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA96342F-CF52-4EC8-803F-AD80331A1844}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA96342F-CF52-4EC8-803F-AD80331A1844}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA96342F-CF52-4EC8-803F-AD80331A1844}.Release|Any CPU.Build.0 = Release|Any CPU
+		{622DFAEF-BED2-4B40-B16C-292065081BD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{622DFAEF-BED2-4B40-B16C-292065081BD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{622DFAEF-BED2-4B40-B16C-292065081BD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{622DFAEF-BED2-4B40-B16C-292065081BD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0408CCDB-9D5D-4CC5-A7A5-4FD18D39C18F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0408CCDB-9D5D-4CC5-A7A5-4FD18D39C18F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0408CCDB-9D5D-4CC5-A7A5-4FD18D39C18F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0408CCDB-9D5D-4CC5-A7A5-4FD18D39C18F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA7BFAB3-51CA-462C-BFE7-71F727558CA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA7BFAB3-51CA-462C-BFE7-71F727558CA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA7BFAB3-51CA-462C-BFE7-71F727558CA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA7BFAB3-51CA-462C-BFE7-71F727558CA2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {62313155-3E38-4A13-A003-06889A4503C2}
+	EndGlobalSection
+EndGlobal

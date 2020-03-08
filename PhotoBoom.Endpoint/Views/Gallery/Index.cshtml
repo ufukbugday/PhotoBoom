@@ -1,0 +1,54 @@
+﻿@model IEnumerable<PhotoBoom.Endpoint.ViewModel.PhotoListViewModel>
+
+@{
+	ViewBag.Title = "Photo List";
+}
+<style>
+	h4 {
+		margin-top: 250px;
+	}
+</style>
+
+@if (!Model.Any())
+{
+	<div class="text-center">
+		<h4>You don't have any photos yes :(</h4>
+	</div>
+	<div class="container text-center">
+		<a asp-controller="Gallery" asp-action="Create"> Add New Photo</a>
+	</div>
+}
+else
+{
+	<br />
+
+	<h1 class="display-4 text-center">My Gallery</h1>
+	<br />
+	<br />
+
+	<div class="card-deck">
+		@foreach (var photo in Model)
+		{
+			var photoPath = "~/Images/" + (photo.PhotoPath ?? "default-place-holder.png");
+
+			<div class="card m-3" style="min-width: 18rem; max-width: 30.5%;">
+				<div class="card-header">
+					<h3>@photo.Title</h3>
+				</div>
+
+				<img class="card-img-top imageThumbnail" src="@photoPath"
+					 asp-append-version="true" />
+
+				<div class="card-footer text-center">
+					<a asp-controller="Gallery" asp-action="Details"
+					   asp-route-id="@photo.Id"
+					   class="btn btn-primary m-1">View</a>
+				</div>
+			</div>
+		}
+	</div>
+	<div class="container text-center">
+		<a asp-controller="Gallery" asp-action="Create"> Add New Photo</a>
+	</div>
+}
+

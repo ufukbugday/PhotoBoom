@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<style>
+	h1 {
+		margin-top: 250px;
+	}
+	* {
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+
+	body {
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 42px;
+		background: #f7f7f7;
+	}
+	span {
+		margin: 0 15px;
+		line-height: .7;
+		text-shadow: 0 0 2px rgba(0, 0, 0, .45);
+		animation: span 3s ease-in infinite alternate;
+	}
+</style>
+<head>
+	<link rel="stylesheet" href="~/css/site.css" />
+</head>
+<div class="main">
+	<span>P</span>
+	<span>H</span>
+	<span>O</span>
+	<span>T</span>
+	<span>O</span>
+	<span>B</span>
+	<span class="letter"></span>
+	<span>M</span>
+</div>
+<div class="align-content-lg-center">
+	<div class="text-center">
+		<br />
+		<p>Welcome to your favorite website.</p>
+		<div class="container">
+			<a asp-area="" asp-controller="Gallery" asp-action="Index">My Photos</a>
+		</div>
+	</div>
+</div>
+
