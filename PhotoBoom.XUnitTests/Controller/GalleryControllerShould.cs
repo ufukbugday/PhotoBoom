@@ -16,6 +16,7 @@ namespace PhotoBoom.XUnitTests.Controller
 	public class GalleryControllerShould
 	{
 		private readonly Mock<IPhotoService> photoServiceMock;
+		private readonly Mock<ITagService> tafServiceMock;
 		private readonly Mock<IWebHostEnvironment> webHostEnvironmentMock;
 		private readonly GalleryController sut;
 
@@ -23,7 +24,7 @@ namespace PhotoBoom.XUnitTests.Controller
 		{
 			photoServiceMock = new Mock<IPhotoService>();
 			webHostEnvironmentMock = new Mock<IWebHostEnvironment>();
-			sut = new GalleryController(photoServiceMock.Object, webHostEnvironmentMock.Object);
+			sut = new GalleryController(photoServiceMock.Object, webHostEnvironmentMock.Object, tafServiceMock.Object);
 		}
 
 		[Fact]

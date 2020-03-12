@@ -4,6 +4,8 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
+using PhotoBoom.Endpoint.Attributes;
+using PhotoBoom.Entity;
 
 namespace PhotoBoom.Endpoint.ViewModel
 {
@@ -13,9 +15,11 @@ namespace PhotoBoom.Endpoint.ViewModel
 		[MaxLength(50, ErrorMessage = "Title cannot exceed 50 characters")]
 		public string Title { get; set; }
 		[Required]
-		[MaxLength(50, ErrorMessage = "Title cannot exceed 50 characters")]
-		public string Tag { get; set; }
+		[MaxLength(50, ErrorMessage = "Tag cannot exceed 50 characters")]
+		[MultipleTag]
+		public string TagStr { get; set; }
 		[Required]	
 		public IFormFile Photo { get; set; }
-    }
+
+	}
 }

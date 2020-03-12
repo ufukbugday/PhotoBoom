@@ -17,6 +17,7 @@ namespace PhotoBoom.DataAccess
 		protected override void OnConfiguring(DbContextOptionsBuilder options)
 			=> options.UseSqlServer("Server=(localdb)\\MSSQLLocalDB; Database=PhotoBoomDB; Trusted_Connection=true");
 		public DbSet<Photo> Photos { get; set; }
+		public DbSet<Tag> Tags { get; set; }
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
@@ -25,7 +26,7 @@ namespace PhotoBoom.DataAccess
 				{
 					Id = 1,
 					Title = "Title",
-					Tag =  "Tag",
+					Tags =  new List<Tag>(),
 					PhotoPath = "PhotoPath"
 				});
 		}
