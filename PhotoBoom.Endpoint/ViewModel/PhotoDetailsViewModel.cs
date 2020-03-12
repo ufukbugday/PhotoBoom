@@ -9,6 +9,7 @@ namespace PhotoBoom.Endpoint.ViewModel
 	public class PhotoDetailsViewModel
 	{
 		public Photo Photo { get; set; }
+		public string TagStr { get; set; }
 		public string PageTitle { get; set; }
 	}
 }

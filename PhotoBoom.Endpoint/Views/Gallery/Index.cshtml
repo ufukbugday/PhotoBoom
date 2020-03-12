@@ -35,10 +35,11 @@ else
 				<div class="card-header">
 					<h3>@photo.Title</h3>
 				</div>
-
 				<img class="card-img-top imageThumbnail" src="@photoPath"
-					 asp-append-version="true" />
-
+				     asp-append-version="true"/>
+				<div class="card-body text-center">
+					<h6>Tag : @photo.TagStr</h6>
+				</div>
 				<div class="card-footer text-center">
 					<a asp-controller="Gallery" asp-action="Details"
 					   asp-route-id="@photo.Id"

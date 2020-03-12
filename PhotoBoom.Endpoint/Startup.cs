@@ -29,6 +29,8 @@ namespace PhotoBoom.Endpoint
 		{
 			services.AddScoped<IPhotoService, PhotoManager>();
 			services.AddScoped<IPhotoDal, EfPhotoDal>();
+			services.AddScoped<ITagService, TagManager>();
+			services.AddScoped<ITagDal, EfTagDal>();
 			services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
 			services.AddControllersWithViews();
